@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f3f5f8"/>
+  <text x="80" y="130" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#182028">Rental Yield Calculator</text>
+  <text x="82" y="182" font-family="Arial, sans-serif" font-size="30" fill="#5c6675">Gross &amp; net yield + weekly cash flow — Australia.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="80" y="250" width="330" height="150" rx="14" fill="#fff" stroke="#e0e4ea" stroke-width="2"/>
+    <text x="110" y="298" font-size="24" fill="#5c6675">Gross yield</text>
+    <text x="110" y="358" font-size="52" font-weight="800" fill="#182028">4.64%</text>
+    <rect x="435" y="250" width="330" height="150" rx="14" fill="#fff" stroke="#146c6c" stroke-width="3"/>
+    <text x="465" y="298" font-size="24" fill="#5c6675">Net yield</text>
+    <text x="465" y="358" font-size="52" font-weight="800" fill="#146c6c">3.31%</text>
+    <rect x="790" y="250" width="330" height="150" rx="14" fill="#fff" stroke="#e0e4ea" stroke-width="2"/>
+    <text x="820" y="298" font-size="24" fill="#5c6675">Weekly cash flow</text>
+    <text x="820" y="358" font-size="46" font-weight="800" fill="#c33">−$225</text>
+  </g>
+  <text x="80" y="560" font-family="Arial, sans-serif" font-size="22" fill="#146c6c" font-weight="700">rental-yield-calculator.correia95.workers.dev</text>
+</svg>
