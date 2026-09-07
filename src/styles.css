@@ -26,7 +26,8 @@
 }
 * { box-sizing: border-box; }
 body {
-  margin: 0; background: var(--bg); color: var(--ink);
+  margin: 0;
+  overflow-x: hidden; background: var(--bg); color: var(--ink);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5; -webkit-font-smoothing: antialiased;
 }
@@ -43,15 +44,16 @@ body {
 .form h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); margin: 14px 0 8px; }
 .form h2:first-child { margin-top: 0; }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.two > * { min-width: 0; }
 
-.field { display: flex; flex-direction: column; gap: 4px; margin-bottom: 8px; }
+.field { display: flex; flex-direction: column; gap: 4px; margin-bottom: 8px;  min-width: 0; }
 .field > span { font-size: 0.73rem; color: var(--ink-soft); font-weight: 600; }
 .field > span em { font-style: normal; opacity: 0.7; }
-.ibox { display: flex; align-items: center; border: 1px solid var(--line); border-radius: 9px; background: var(--card-2); overflow: hidden; }
+.ibox { display: flex; align-items: center; border: 1px solid var(--line); border-radius: 9px; background: var(--card-2); overflow: hidden; min-width: 0; }
 .ibox:focus-within { border-color: var(--brand); box-shadow: 0 0 0 3px rgba(20, 108, 108, 0.16); }
 .ibox i { font-style: normal; color: var(--ink-soft); padding: 0 7px; font-size: 0.85rem; }
 .ibox i.suf { border-left: 1px solid var(--line); }
-.ibox input { flex: 1; min-width: 0; border: 0; background: transparent; color: var(--ink); font: inherit; font-size: 1rem; font-weight: 600; padding: 9px 7px; outline: none; }
+.ibox input { flex: 1; width: 100%; min-width: 0; border: 0; background: transparent; color: var(--ink); font: inherit; font-size: 1rem; font-weight: 600; padding: 9px 7px; outline: none; }
 .field select { border: 1px solid var(--line); border-radius: 9px; background: var(--card-2); color: var(--ink); font: inherit; font-weight: 600; padding: 9px 7px; }
 .note { font-size: 0.78rem; color: var(--ink-soft); margin: 6px 0 0; }
 
